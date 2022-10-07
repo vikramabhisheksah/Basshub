@@ -1,5 +1,6 @@
 export const products =[
   {
+    "id": 1,
     "name": "Focal Clear Open-Back Headphones",
     "image": "",
     "brand": "Focal",
@@ -13,6 +14,7 @@ export const products =[
     "color": "Gray"
   },
   {
+    "id": 2,
     "name": "Hifiman Sundara Planar Magnetic Headphones - 2020 Edition",
     "image": "",
     "brand": "Hifiman",
@@ -26,6 +28,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 3,
     "name": "Moondrop Blessing 2 In-Ear Monitor Headphones",
     "image": "",
     "brand": "Moondrop",
@@ -39,6 +42,7 @@ export const products =[
     "color": "White"
   },
   {
+    "id": 4,
     "name": "Thieaudio Monarch MKII In-Ear Monitors",
     "image": "",
     "brand": "Thieaudio",
@@ -52,6 +56,7 @@ export const products =[
     "color": "Dark Brown"
   },
   {
+    "id": 5,
     "name": "Sennheiser HD 800S",
     "image": "",
     "brand": "Sennheiser",
@@ -65,19 +70,21 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 6,
     "name": "Moondrop Variations Tribrid In-Ear Monitor Headphones",
     "image": "",
     "brand": "Moondrop",
     "rating": 4.6,
     "price": 52.09,
     "design": "Closed-Back, In-ear",
-    "connectivity": "Wired",
+    "connectivity": "Wireless",
     "description": "The Moondrop Variations Tribrid In-Ear Monitor Headphone is the latest set of high-resolution in-ear monitors featuring an advanced tribrid driver combination. The pair houses a premium five driver configuration housing dual Sonion EST drivers paired with dual midrange Balanced Armature drivers, and a 10mm large LCP diaphragm Dynamic driver. Moondrop has designed the pair with a 3D-printed medical-grade resin material cavity with sandblasted stainless steel face panels for a rich and premium look.",
     "warranty": "1 year",
     "material": "Stainless steel + medical-grade resin ",
     "color": "Black"
   },
   {
+    "id": 7,
     "name": "Hifiman Arya Planar Magnetic Over-Ear Headphones - Stealth Magnets Edition",
     "image": "",
     "brand": "Hifiman",
@@ -91,6 +98,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 8,
     "name": "Anker Soundcore Liberty Air 2 Pro Active Noise Cancelling True Wireless Bluetooth Earbuds - Black",
     "image": "",
     "brand": "Anker",
@@ -104,6 +112,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 9,
     "name": "Logitech H390 ClearChat Comfort USB Headset - Black; Noise Cancellation Microphone; Inline Volume; Mute Controls",
     "image": "",
     "brand": "Logitech",
@@ -117,6 +126,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 10,
     "name": "Apple Earpods Wired Earbuds - White; Lightning Connector; In-line Remote Controls; Built-in Microphone",
     "image": "",
     "brand": "Apple",
@@ -130,6 +140,7 @@ export const products =[
     "color": "White"
   },
   {
+    "id": 11,
     "name": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Wireless Bluetooth Headphones - Black; 40H Playtime; Hi-Res Audio; Deep Bass; Memory Foam Ear Cups",
     "image": "",
     "brand": "Anker",
@@ -143,6 +154,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 12,
     "name": "Sony WH-1000XM5 Active Noise Canceling Wireless Bluetooth Over-Ear Headphones - Black",
     "image": "",
     "brand": "Sony",
@@ -156,6 +168,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 13,
     "name": "JLab GO Work Bluetooth Wireless Office Headset - Black",
     "image": "",
     "brand": "Jlab",
@@ -169,6 +182,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 14,
     "name": "Sony WH-1000XM4 Active Noise Canceling Wireless Bluetooth Over-Ear Headphones - Black; Built-in Microphone; Up to 30 hours Listening Time",
     "image": "",
     "brand": "Sony",
@@ -182,6 +196,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 15,
     "name": "Logitech USB H540 Wired Headset - Black; Adjustable Padded Headband; Easy On-ear Sound Controls; Noise-cancelling Rotating Boom Microphone",
     "image": "",
     "brand": "Logitech",
@@ -195,6 +210,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 16,
     "name": "JLab Go Air Sport True Wireless Bluetooth Workout Earbuds - Black; C3 Clear Calling; Secure Earhook Sport Design; 32+ Hour Bluetooth Playtime; 3 EQ Sound Settings",
     "image": "",
     "brand": "Jlab",
@@ -208,6 +224,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 17,
     "name": "Beyerdynamic DT 770 Pro 80 Ohm Over-Ear Headphones - Gray; Passive Noise Cancellation; Soft Padded Headband",
     "image": "",
     "brand": "Beyerdynamic",
@@ -221,6 +238,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 18,
     "name": "Beyerdynamic DT 990 Pro Open Back Wired Headphones - Black; Replaceable Ear Pads; Padded and Adjustable Spring Steel Headband",
     "image": "",
     "brand": "Beyerdynamic4.0",
@@ -234,6 +252,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 19,
     "name": "Audio-Technica ATH-M20X Professional Monitor Wired Headphones",
     "image": "",
     "brand": "Audio-Technica",
@@ -247,6 +266,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 20,
     "name": "Sony ZX Series Wired On-Ear Headphones, Black MDR-ZX110",
     "image": "",
     "brand": "Sony",
@@ -260,6 +280,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 21,
     "name": "JBL Tune 510BT: Wireless On-Ear Headphones with Purebass Sound - Blue",
     "image": "",
     "brand": "JBL",
@@ -273,6 +294,7 @@ export const products =[
     "color": "Blue"
   },
   {
+    "id": 22,
     "name": "RORSOU R10 On-Ear Headphones with Microphone, Lightweight Folding Stereo Bass Headphones with 1.5M No-Tangle Cord, Portable Wired Headphones for Smartphone Tablet Computer MP3 / 4 (Black)",
     "image": "",
     "brand": "RORSOU",
@@ -286,6 +308,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 23,
     "name": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones, Wireless Over Ear Bluetooth Headphones, 40H Playtime, Hi-Res Audio, Deep Bass, Memory Foam Ear Cups, for Travel, Home Office",
     "image": "",
     "brand": "Anker",
@@ -293,12 +316,13 @@ export const products =[
     "price": 59.99,
     "design": "Over Ear",
     "connectivity": "Wireless",
-    "description": "Incredible Sound Loved by 20 Million+ People. In the box you ll find a travel pouch to conveniently store Life Q20 active noise cancelling headphones in, a 3.5mm AUX cable to keep the music playing when you're low on battery, and a Micro USB cable to charge them with.",
+    "description": "Incredible Sound Loved by 20 Million+ People. In the box you ll find a travel pouch to conveniently store Life Q20 active noise cancelling headphones in, a 3.5mm AUX cable to keep the music playing when you re low on battery, and a Micro USB cable to charge them with.",
     "warranty": "1 year",
     "material": "Lightweight polymer",
     "color": "Black"
   },
   {
+    "id": 24,
     "name": "Beats Studio3 Wireless Noise Cancelling Over-Ear Headphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 22 Hours of Listening Time, Built-in Microphone - Midnight Black (Latest Model)",
     "image": "",
     "brand": "Beats",
@@ -312,6 +336,7 @@ export const products =[
     "color": "Midnight Black"
   },
   {
+    "id": 25,
     "name": "Bose SoundLink around-ear wireless headphones II- White",
     "image": "",
     "brand": "Bose",
@@ -325,6 +350,7 @@ export const products =[
     "color": "White"
   },
   {
+    "id": 26,
     "name": "POWMEE P20 Kids Headphones Over-Ear Headphones for Kids/Teens/Boys/Girls/School with 94dB Volume Limited Adjustable Stereo Tangle-Free 3.5MM Jack Wire Cord for Fire Tablets/Travel/PC/Phones(Blue)",
     "image": "",
     "brand": "POWMEE",
@@ -338,6 +364,7 @@ export const products =[
     "color": "Blue"
   },
   {
+    "id": 27,
     "name": "Beats Solo3 Wireless On-Ear Headphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 40 Hours of Listening Time, Built-in Microphone - Red (Latest Model)",
     "image": "",
     "brand": "Beats",
@@ -351,6 +378,7 @@ export const products =[
     "color": "Citrus Red"
   },
   {
+    "id": 28,
     "name": "Srhythm NC25 Active Noise Cancelling Headphones Bluetooth 5.3,ANC Stereo Headset Over-Ear with Hi-Fi,Mic,50H Playtime,Voice Assistant,Low Latency Game Mode",
     "image": "",
     "brand": "Srhythm",
@@ -364,6 +392,7 @@ export const products =[
     "color": "Mint Green"
   },
   {
+    "id": 29,
     "name": "LORELEI X6 Over-Ear Headphones with Microphone, Lightweight Foldable & Portable Stereo Bass Headphones with 1.45M No-Tangle, Wired Headphones for Smartphone Tablet MP3 / 4 (Space Black)",
     "image": "",
     "brand": "LORELEI",
@@ -377,6 +406,7 @@ export const products =[
     "color": "Black"
   },
   {
+    "id": 30,
     "name": "LORELEI X8 Over-Ear Wired Headphones with Microphone with 1.45m-Tangle-Free Nylon Line&3.5mm Plug,Lightweight Foldable & Portable Headphones for Smartphone,Tablet,Computer,Mp3/4(Dark Purple)",
     "image": "",
     "brand": "LORELEI",
@@ -390,6 +420,7 @@ export const products =[
     "color": "Dark Purple"
   },
   {
+    "id": 31,
     "name": "6S Wireless Bluetooth Headphones Over Ear, Hi-Fi Stereo Foldable Wireless Stereo Headsets Earbuds with Built-in Mic, Volume Control, FM for Phone/PC (Black & Gold)",
     "image": "",
     "brand": "6S",

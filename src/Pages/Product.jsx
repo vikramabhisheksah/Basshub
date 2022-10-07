@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import { useParams } from "react-router";
+import {products} from '../data';
 
 const Container = styled.div``
 const Wrapper = styled.div`
@@ -7,11 +8,11 @@ const Wrapper = styled.div`
     display:flex;
 `
 const ImgContainer = styled.div`
-    flex:1
+    flex:1.2
 `
 const Image = styled.img`
     width:100%;
-    height: 80vh;
+    height: 100vh;
     object-fit:cover;
 `
 const InfoContainer = styled.div`
@@ -72,52 +73,51 @@ const FeatureValue = styled.span`
 `
 
 
-const Product = (item) => {
+const Product = () => {
+    const {id} = useParams();
+    const product = products.find((p) => p.id === parseInt(id));
 
     return ( 
         <Container>
             <Wrapper>
                 <ImgContainer>
-                    <Image src='img/solo3-pdp-p02.png.large.2x copy.png'/>
+                    <Image src={'/img/'+ product.id + '.jpg'}/>
                 </ImgContainer>
                 <InfoContainer>
-                    <Title> JBL headphones</Title>
+                    <Title> {product.name}</Title>
                     <Desc>
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        Lorem ipsum Lorem ipsum 
-                        Lorem ipsum Lorem ipsum 
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                        {product.description}
                     </Desc>
-                    <Price>$ 20</Price>
+                    <Price>$ {product.price}</Price>
 
                     <FeaturesContainer>
                         <Feature>
                             <ColorTitle>Color</ColorTitle>
-                            <FeatureColor color='black'/>
+                            <FeatureColor color={product.color.toLowerCase()}/>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Brand</FeatureTitle>
-                            <FeatureValue>Sony</FeatureValue>
+                            <FeatureValue>{product.brand}</FeatureValue>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Material</FeatureTitle>
-                            <FeatureValue>Stainless steel + resin</FeatureValue>
+                            <FeatureValue>{product.material}</FeatureValue>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Warranty</FeatureTitle>
-                            <FeatureValue>1 year</FeatureValue>
+                            <FeatureValue>{product.warranty}</FeatureValue>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Connectivity</FeatureTitle>
-                            <FeatureValue>Wired</FeatureValue>
+                            <FeatureValue>{product.connectivity}</FeatureValue>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Design</FeatureTitle>
-                            <FeatureValue>Over-Ear</FeatureValue>
+                            <FeatureValue>{product.design}</FeatureValue>
                         </Feature>
                         <Feature>
                             <FeatureTitle>Rating</FeatureTitle>
-                            <FeatureValue>4.3/5</FeatureValue>
+                            <FeatureValue>{product.rating}/5</FeatureValue>
                         </Feature>
 
                     </FeaturesContainer>

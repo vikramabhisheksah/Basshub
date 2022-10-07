@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 
 const Container = styled.div`
   height: 60px;
@@ -21,7 +23,7 @@ const Center = styled.div`
 `;
 const Right = styled.div`
   flex: 1;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 `;
 const Logo = styled.img`
@@ -46,25 +48,25 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-
-
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo src="basshub.png" />
+          <Link to="/">
+            <Logo src="/basshub.png" />
+          </Link>
         </Left>
         <Center>
           <SearchContainer>
             <Input />
-            <Search style={{color:"black", fontSize:32}}/>
+            <Search style={{ color: "black", fontSize: 32 }} />
           </SearchContainer>
         </Center>
         <Right>
           <MenuItem>
-            <Badge badgeContent={4} color='primary'>
-              <ShoppingCartOutlined/>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
         </Right>

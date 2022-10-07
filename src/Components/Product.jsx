@@ -1,5 +1,6 @@
-import { Favorite, FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
+import {  FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components";
+import { useNavigate } from "react-router";
 
 const Info = styled.div`
     opacity:0;
@@ -63,17 +64,18 @@ const Icon = styled.div`
 
 
 const Product = ({item}) => {
+    let navigate = useNavigate();
     return ( 
-        <Container>
+        <Container onClick={()=>{navigate(`/product/${item.id}`)}}>
             <Circle/>
-            <Image src={item.img}/>
+            <Image src={'/img/'+item.id+'.jpg'}/>
             <Info>
                  <Icon>
                      <ShoppingCartOutlined/>
                  </Icon>
-                 <Icon>
+                 {/* <Icon>
                      <SearchOutlined/>
-                 </Icon>
+                 </Icon> */}
                  <Icon>
                      <FavoriteBorderOutlined/>
                  </Icon>
