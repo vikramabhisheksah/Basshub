@@ -39,7 +39,7 @@ export const products =[
     "description": "he Moondrop Blessings 2 In-Ear monitor headphones are equipped with a five driver hybrid setup on each side having One 10mm paper cone diaphragm unit for handling the bass section, Dual Softears D-Mid-A driver units for handling the Mid-range frequencies, and Dual Knowles SWFK units for handling the Treble sections. The drivers work together flawlessly with no distortion between them at all. The resulting sound output is very smooth, the drivers are tuned in a way to match the Harman Target Curve, it offers a quick and deep bass response, natural, lush vocals, and smooth and sweet treble response.",
     "warranty": "1 year",
     "material": "Medical Grade Resin Shell",
-    "color": "White"
+    "color": "white"
   },
   {
     "id": 4,

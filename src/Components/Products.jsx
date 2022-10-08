@@ -28,7 +28,7 @@ const Select = styled.select`
 `
 const Option = styled.option``
 
-const Products = ({searchQry}) => {
+const Products = ({searchQry,handleCompareClick}) => {
 
     const [filters,setFilters]  =useState({})
     const [sort, setSort] = useState('newest')
@@ -70,13 +70,7 @@ const Products = ({searchQry}) => {
             );
         }
     },[sort]);
-    const [compareItems, setCompareItems] = useState([]);
-  
-    const handleCompareClick =(id)=>{
-        if (!compareItems.includes(id) && compareItems.length <3) {
-          setCompareItems(current => [...current, id]) 
-        }
-    }
+    
     return ( <>
         <FilterContainer>
             <Filter>

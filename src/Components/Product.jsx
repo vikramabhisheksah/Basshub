@@ -140,7 +140,7 @@ const Product = ({ item, handleCompareClick }) => {
             <RatingStar id={String(item.id)} rating={item.rating}  size={18}/>
           </ProductRating>
           <ProductPrice>$ {item.price}</ProductPrice>
-          <CompareIcon onClick={()=>handleCompareClick(item.id)} >
+          <CompareIcon onClick={()=>handleCompareClick(item)} >
             <CompareOutlined/><span>Compare</span>
           </CompareIcon>
         </ProductStats>
