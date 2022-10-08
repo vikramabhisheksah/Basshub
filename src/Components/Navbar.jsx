@@ -48,7 +48,7 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const Navbar = () => {
+const Navbar = ({setSearchQry}) => {
   return (
     <Container>
       <Wrapper>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </Left>
         <Center>
           <SearchContainer>
-            <Input />
+            <Input onChange={(e)=>setSearchQry(e.target.value)}/>
             <Search style={{ color: "black", fontSize: 32 }} />
           </SearchContainer>
         </Center>

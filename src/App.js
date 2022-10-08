@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Product from "./Pages/Product";
 import Offers from "./Components/Offers";
+import { useState } from "react";
 
 const GlobalStyle = createGlobalStyle`
 :root{
@@ -14,14 +15,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
+  const [searchQry,setSearchQry] = useState('')
   return (
     <>
       <GlobalStyle />
       <BrowserRouter>
-      <Navbar />
+      <Navbar setSearchQry = {setSearchQry}/>
       <Offers/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home searchQry={searchQry}/>} />
           <Route path="/product/:id" element={<Product/>}/>
         </Routes>
       </BrowserRouter>

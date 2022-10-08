@@ -22,7 +22,6 @@ const InfoContainer = styled.div`
 `
 const Title = styled.h1`
     font-weight: 200;
-
 `
 const Desc = styled.p`
     margin: 20px 0px;
@@ -52,7 +51,6 @@ const FeatureTitle = styled.span`
 const ColorTitle = styled.span`
     
     font-size:20px;
-    font-weight: 200;
     font-weight: 600;
 `
 const FeatureColor = styled.div`
