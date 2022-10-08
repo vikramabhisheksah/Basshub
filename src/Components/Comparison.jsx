@@ -2,39 +2,63 @@ import "./styles.css";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
 import React from "react";
+import { RatingStar } from "rating-star";
+
 
 const FeatureColor = styled.div`
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    background-color: ${props=>props.color};
-    margin:0px 5px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    border-width: 1px;
-    border-style: solid;
-    border-color:black;
-    margin-left:50%;
-`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 50%;
+`;
 const Image = styled.img`
   height: 300px;
   max-width: 300px;
- cursor:pointer;
+  cursor: pointer;
 `;
+const RowHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const Button = styled.button`
+  height: 60px;
+  width: 150px;
+  background-color: #005e7c;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 5px;
+`;
+
 const Comparison = ({ compareItems }) => {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
+  const notify = () => alert("The comparison has been saved (Only for Demo purpose) ");
+
   return (
     <div className="row compare">
       <div className="col-12 mt-5 text-center">
         <table className="table">
           <thead className="thead-default">
-          <tr>
+            <tr>
               <th />
               {compareItems.map((product) => (
-                <th key={product.id} onClick={() => {
+                <th
+                  key={product.id}
+                  onClick={() => {
                     navigate(`/product/${product.id}`);
-                  }}><Image src={"/img/" + product.id + ".jpg"} /></th>
+                  }}
+                >
+                  <Image src={"/img/" + product.id + ".jpg"} />
+                </th>
               ))}
             </tr>
             <tr>
@@ -46,7 +70,12 @@ const Comparison = ({ compareItems }) => {
           </thead>
           <tbody>
             <tr className="price">
-              <th scope="row">Price</th>
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="price" value="Price" />
+                  <span style={{ marginLeft: "30px" }}>Price</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.price}
@@ -56,7 +85,12 @@ const Comparison = ({ compareItems }) => {
           </tbody>
           <tbody>
             <tr className="brand">
-              <th scope="row">Brand</th>
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="brand" value="Brand" />
+                  <span style={{ marginLeft: "30px" }}>Brand</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.brand}
@@ -65,18 +99,47 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="color">
-              <th scope="row">Color</th>
+            <tr className="rating">
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="rating" value="Rating" />
+                  <span style={{ marginLeft: "30px" }}>Rating</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
-                  <FeatureColor color={product.color.toLowerCase()}/>
+                  <RatingStar
+                    id={String(product.id)}
+                    rating={product.rating}
+                    size={18}
+                  />
+                </td>
+              ))}
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="color">
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="color" value="Color" />
+                  <span style={{ marginLeft: "30px" }}>Color</span>
+                </RowHeader>
+              </th>
+              {compareItems.map((product) => (
+                <td key={product.id} className="text-center">
+                  <FeatureColor color={product.color.toLowerCase()} />
                 </td>
               ))}
             </tr>
           </tbody>
           <tbody>
             <tr className="design">
-              <th scope="row">Design</th>
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="design" value="Design" />
+                  <span style={{ marginLeft: "30px" }}>Design</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.design}
@@ -86,7 +149,16 @@ const Comparison = ({ compareItems }) => {
           </tbody>
           <tbody>
             <tr className="connectivity">
-              <th scope="row">Connectivity</th>
+              <th scope="row">
+                <RowHeader>
+                  <input
+                    type="checkbox"
+                    name="connectivity"
+                    value="Connectivity"
+                  />
+                  <span style={{ marginLeft: "30px" }}>Connectivity</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.connectivity}
@@ -96,7 +168,12 @@ const Comparison = ({ compareItems }) => {
           </tbody>
           <tbody>
             <tr className="material">
-              <th scope="row">Material</th>
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="material" value="Material" />
+                  <span style={{ marginLeft: "30px" }}>Material</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.material}
@@ -106,7 +183,12 @@ const Comparison = ({ compareItems }) => {
           </tbody>
           <tbody>
             <tr className="warranty">
-              <th scope="row">Warranty</th>
+              <th scope="row">
+                <RowHeader>
+                  <input type="checkbox" name="warranty" value="Warranty" />
+                  <span style={{ marginLeft: "30px" }}>Warranty</span>
+                </RowHeader>
+              </th>
               {compareItems.map((product) => (
                 <td key={product.id} className="text-center">
                   {product.warranty}
@@ -115,6 +197,9 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
         </table>
+
+        <Button onClick={notify}>Save Comparison</Button>
+        {/* <ToastContainer /> */}
       </div>
     </div>
   );
