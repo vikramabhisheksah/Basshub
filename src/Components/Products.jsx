@@ -70,9 +70,13 @@ const Products = ({searchQry}) => {
             );
         }
     },[sort]);
-
-
-
+    const [compareItems, setCompareItems] = useState([]);
+  
+    const handleCompareClick =(id)=>{
+        if (!compareItems.includes(id) && compareItems.length <3) {
+          setCompareItems(current => [...current, id]) 
+        }
+    }
     return ( <>
         <FilterContainer>
             <Filter>
@@ -141,7 +145,7 @@ const Products = ({searchQry}) => {
 
         <Container>
             {filteredProducts.map((item)=>(
-                <Product item={item} key={item.id}/>
+                <Product item={item} key={item.id} handleCompareClick={handleCompareClick}/>
             ))}
         </Container>
         </>

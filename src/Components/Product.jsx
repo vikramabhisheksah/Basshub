@@ -1,11 +1,12 @@
 import {
-    CompareOutlined,
+  CompareOutlined,
   FavoriteBorderOutlined,
   ShoppingCartOutlined,
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
 import { RatingStar } from "rating-star";
+
 
 const Info = styled.div`
   opacity: 0;
@@ -15,7 +16,6 @@ const Info = styled.div`
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0, 0.2);
-  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   cursor: pointer;
   border-style: solid;
   border-width: 0.5px;
-  position:relative;
+  position: relative;
 `;
 const Container = styled.div`
   padding: 0px 20px;
@@ -66,7 +66,25 @@ const Icon = styled.div`
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
+  z-index:4;
+  &:hover {
+    background-color: #e9f5f5;
+    transform: scale(1.1);
+  }
+`;
 
+const CompareIcon = styled.div`
+  flex:1
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  transition: all 0.5s ease;
+  font-size:10px;
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
@@ -80,8 +98,10 @@ const ProductTitle = styled.div`
   font-weight: 600;
   min-height: 100px;
 `;
-const ProductRating = styled.div``;
+const ProductRating = styled.div`
+`;
 const ProductPrice = styled.div`
+
   font-size: 20px;
   font-weight: 600;
 `;
@@ -91,23 +111,22 @@ const ProductStats = styled.div`
   justify-content: space-between;
 `;
 
-const Product = ({ item }) => {
+const Product = ({ item, handleCompareClick }) => {
   let navigate = useNavigate();
+  
   return (
-    <Wrapper
+    <Wrapper>
       
-    >
-      <Container onClick={() => {
-        navigate(`/product/${item.id}`);
-      }}>
+      <Container
+        onClick={() => {
+          navigate(`/product/${item.id}`);
+        }}
+      >
         <Circle />
         <Image src={"/img/" + item.id + ".jpg"} />
         <Info>
           <Icon>
             <ShoppingCartOutlined />
-          </Icon>
-          <Icon>
-            <CompareOutlined />
           </Icon>
           <Icon>
             <FavoriteBorderOutlined />
@@ -118,9 +137,12 @@ const Product = ({ item }) => {
         <ProductTitle>{item.name}</ProductTitle>
         <ProductStats>
           <ProductRating>
-            <RatingStar id={String(item.id)} rating={item.rating} />
+            <RatingStar id={String(item.id)} rating={item.rating}  size={18}/>
           </ProductRating>
           <ProductPrice>$ {item.price}</ProductPrice>
+          <CompareIcon onClick={()=>handleCompareClick(item.id)} >
+            <CompareOutlined/><span>Compare</span>
+          </CompareIcon>
         </ProductStats>
       </ProductInfo>
     </Wrapper>
