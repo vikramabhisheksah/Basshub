@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Product from "./Pages/Product";
 import Offers from "./Components/Offers";
 import { useState } from "react";
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
+      <HashRouter>
         <Navbar setSearchQry={setSearchQry} />
         <Offers />
         <Routes>
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/product/:id" element={<Product />} />
         </Routes>
         <Button>Compare</Button>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };
