@@ -1,5 +1,6 @@
 import "./styles.css";
 import styled from "styled-components";
+import { useNavigate } from "react-router";
 
 const FeatureColor = styled.div`
     width:20px;
@@ -15,12 +16,26 @@ const FeatureColor = styled.div`
     border-color:black;
     margin-left:50%;
 `
+const Image = styled.img`
+  height: 300px;
+  max-width: 300px;
+ cursor:pointer;
+`;
 const Comparison = ({ compareItems }) => {
+    let navigate = useNavigate();
   return (
     <div className="row compare">
       <div className="col-12 mt-5 text-center">
         <table className="table">
           <thead className="thead-default">
+          <tr>
+              <th />
+              {compareItems.map((product) => (
+                <th key={product.id} onClick={() => {
+                    navigate(`/product/${product.id}`);
+                  }}><Image src={"/img/" + product.id + ".jpg"} /></th>
+              ))}
+            </tr>
             <tr>
               <th />
               {compareItems.map((product) => (

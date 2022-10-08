@@ -39,7 +39,7 @@ const Productname = styled.span`
   color: #393c45;
 `;
 
-const ProductCompare = ({ product, compare }) => (
+const ProductCompare = ({ product }) => (
   <div key={product.id} className="col-sm-6 col-md-3">
     <ImgWrapper>
       <Image src={"/img/" + product.id + ".jpg"} />

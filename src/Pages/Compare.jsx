@@ -16,12 +16,6 @@ const Compare = ({ compareItems }) => {
               <h2 className="mb-3">Compare Products</h2>
             </div>
           </div>
-          
-          <div className="row mt-3">
-            {compareItems.map((product) => (
-              <ProductCompare key={product.id} product={product} />
-            ))}
-          </div>
           <Comparison compareItems={compareItems} />
         </div>
       )}

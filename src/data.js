@@ -39,7 +39,7 @@ export const products =[
     "description": "he Moondrop Blessings 2 In-Ear monitor headphones are equipped with a five driver hybrid setup on each side having One 10mm paper cone diaphragm unit for handling the bass section, Dual Softears D-Mid-A driver units for handling the Mid-range frequencies, and Dual Knowles SWFK units for handling the Treble sections. The drivers work together flawlessly with no distortion between them at all. The resulting sound output is very smooth, the drivers are tuned in a way to match the Harman Target Curve, it offers a quick and deep bass response, natural, lush vocals, and smooth and sweet treble response.",
     "warranty": "1 year",
     "material": "Medical Grade Resin Shell",
-    "color": "white"
+    "color": "White"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@ export const products =[
     "description": "Thieaudio's goal for the Monarch MKII was to enhance its technical performance and introduce a more balanced tuning, while staying true to the original spirit of this monitor. We took this opportunity to update all of the internal drivers, swapping them out for their latest counterparts and rearranging their configurations to achieve an even more optimal performance.?",
     "warranty": "3 years",
     "material": "Soft braided paracord material",
-    "color": "Dark Brown"
+    "color": "Brown"
   },
   {
     "id": 5,
@@ -333,7 +333,7 @@ export const products =[
     "description": "Beats Studio3 Wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Cancelling.",
     "warranty": "3 years",
     "material": "Plastic, rubber",
-    "color": "Midnight Black"
+    "color": "Black"
   },
   {
     "id": 25,
@@ -375,7 +375,7 @@ export const products =[
     "description": "Beats Solo3 Wireless on-ear headphones immerse you in rich, award-winning sound everywhere you want to go. With up to 40 hours of battery life, it s your perfect everyday headphone. The Apple W1 chip delivers one-touch pairing with your Apple devices and unique features like Siri integration. The headphone stays true to its predecessor with bold styling and streamlined design. And since it s durable, foldable, and wireless, Beats Solo3 Wireless is the ultimate portable listening device.",
     "warranty": "3 years",
     "material": "Plastic, rubber",
-    "color": "Citrus Red"
+    "color": "Red"
   },
   {
     "id": 28,
@@ -389,7 +389,7 @@ export const products =[
     "description": "Ultra-light,Foldable,Rotatable ANC headphones,Extremely comfortable for all-day wear.",
     "warranty": "1 year",
     "material": "Plastic",
-    "color": "Mint Green"
+    "color": "Green"
   },
   {
     "id": 29,
@@ -417,7 +417,7 @@ export const products =[
     "description": "These headphones with microphone adopt High-definition 40mm driver and compact earcups design, which deliver exceptionally clear sound with full dynamic range and rich bass and crisp mids. Effortless style and powerful sound let you tune into your own rhythms with the set of on-ear headphones.",
     "warranty": "1 year",
     "material": "Plastic",
-    "color": "Dark Purple"
+    "color": "Purple"
   },
   {
     "id": 31,
@@ -431,6 +431,6 @@ export const products =[
     "description": "High Definition Stereo Headphones, and advanced Wireless chip that aim to deliver you superior sound quality with high fidelity deep bass and crystal clear treble, Deep, accurate bass response, extended frequency range, rechargeable. Lose yourself in immersive music even in the lowest volume levels!",
     "warranty": "1 year",
     "material": "Plastic",
-    "color": "Black & Gold"
+    "color": "Black"
   }
 ]
