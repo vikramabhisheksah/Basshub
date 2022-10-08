@@ -1,7 +1,8 @@
 import styled from "styled-components";
 // import { products } from "../data";
-import ProductCompare from "../Components/ProductCompare";
+// import ProductCompare from "../Components/ProductCompare";
 import Comparison from "../Components/Comparison";
+import React from "react";
 const Wrapper = styled.div`
   margin: 30px;
 `;

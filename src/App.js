@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Compare from "./Pages/Compare";
 import { useNavigate } from "react-router";
 import 'bootstrap/dist/css/bootstrap.css'
+import React from "react";
 
 const GlobalStyle = createGlobalStyle`
 :root{

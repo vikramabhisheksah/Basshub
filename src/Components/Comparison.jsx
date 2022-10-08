@@ -1,6 +1,7 @@
 import "./styles.css";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
+import React from "react";
 
 const FeatureColor = styled.div`
     width:20px;

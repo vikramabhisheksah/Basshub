@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {products} from '../data';
 import Product from "./Product";
+import React from "react";
 const Container = styled.div`
     padding:20px;
     display:flex;

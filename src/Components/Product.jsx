@@ -6,7 +6,7 @@ import {
 import styled from "styled-components";
 import { useNavigate } from "react-router";
 import { RatingStar } from "rating-star";
-
+import React from "react";
 
 const Info = styled.div`
   opacity: 0;

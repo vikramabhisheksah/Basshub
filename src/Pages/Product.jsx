@@ -6,6 +6,7 @@ import {
   ShoppingCartOutlined,
 } from "@material-ui/icons";
 import { RatingStar } from "rating-star";
+import React from "react";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
