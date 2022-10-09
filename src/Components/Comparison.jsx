@@ -57,7 +57,7 @@ const Comparison = ({ compareItems }) => {
                     navigate(`/product/${product.id}`);
                   }}
                 >
-                  <Image src={"/img/" + product.id + ".jpg"} />
+                  <Image src={"./img/" + product.id + ".jpg"} />
                 </th>
               ))}
             </tr>

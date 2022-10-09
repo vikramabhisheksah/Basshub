@@ -54,7 +54,7 @@ const Navbar = ({setSearchQry}) => {
       <Wrapper>
         <Left>
           <Link to="/">
-            <Logo src="/basshub.png" />
+            <Logo src="./basshub.png" />
           </Link>
         </Left>
         <Center>

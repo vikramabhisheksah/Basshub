@@ -105,7 +105,7 @@ const Product = () => {
     <Container>
       <Wrapper>
         <ImgContainer>
-          <Image src={"/img/" + product.id + ".jpg"} />
+          <Image src={"./img/" + product.id + ".jpg"} />
         </ImgContainer>
         <InfoContainer>
           <Title> {product.name}</Title>

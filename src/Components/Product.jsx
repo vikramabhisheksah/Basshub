@@ -124,7 +124,7 @@ const Product = ({ item, handleCompareClick }) => {
         }}
       >
         <Circle />
-        <Image src={"/img/" + item.id + ".jpg"} />
+        <Image src={"./img/" + item.id + ".jpg"} />
         <Info>
           <Icon>
             <ShoppingCartOutlined />
