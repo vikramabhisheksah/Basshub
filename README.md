@@ -1,3 +1,9 @@
+# Collaborators
+Nihar Shailesh Joshi
+Aditya Nair
+Priyal Sharma
+Vikram Sah
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
