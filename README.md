@@ -1,8 +1,8 @@
 # Collaborators
-## Nihar Shailesh Joshi\
-## Aditya Nair\
-## Priyal Sharma\
-## Vikram Sah
+### Nihar Shailesh Joshi
+### Aditya Nair
+### Priyal Sharma
+### Vikram Sah
 
 # Getting Started with Create React App
 
