@@ -43,6 +43,15 @@ const Comparison = ({ compareItems }) => {
   let navigate = useNavigate();
   const notify = () => alert("The comparison has been saved (Only for Demo purpose) ");
 
+  const handleClick = (idOfTh) => {
+    console.log(idOfTh)
+    if (document.getElementById(idOfTh).style.backgroundColor != 'pink') {
+      document.getElementById(idOfTh).style.backgroundColor = 'pink';
+    }else {
+      document.getElementById(idOfTh).style.backgroundColor = 'white';
+    };
+  }
+
   return (
     <div className="row compare">
       <div className="col-12 mt-5 text-center">
@@ -69,10 +78,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </thead>
           <tbody>
-            <tr className="price">
+            <tr id="price" className="price">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="price" value="Price" />
+                  <input type="checkbox" name="price" value="Price" onClick={() => handleClick("price")}/>
                   <span style={{ marginLeft: "30px" }}>Price</span>
                 </RowHeader>
               </th>
@@ -84,10 +93,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="brand">
+            <tr id="brand" className="brand">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="brand" value="Brand" />
+                  <input type="checkbox" name="brand" value="Brand" onClick={() => handleClick("brand")}/>
                   <span style={{ marginLeft: "30px" }}>Brand</span>
                 </RowHeader>
               </th>
@@ -99,10 +108,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="rating">
+            <tr id="rating" className="rating">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="rating" value="Rating" />
+                  <input type="checkbox" name="rating" value="Rating" onClick={() => handleClick("rating")}/>
                   <span style={{ marginLeft: "30px" }}>Rating</span>
                 </RowHeader>
               </th>
@@ -118,10 +127,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="color">
+            <tr id="color" className="color">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="color" value="Color" />
+                  <input type="checkbox" name="color" value="Color" onClick={() => handleClick("color")}/>
                   <span style={{ marginLeft: "30px" }}>Color</span>
                 </RowHeader>
               </th>
@@ -133,10 +142,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="design">
+            <tr id="design" className="design">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="design" value="Design" />
+                  <input type="checkbox" name="design" value="Design" onClick={() => handleClick("design")}/>
                   <span style={{ marginLeft: "30px" }}>Design</span>
                 </RowHeader>
               </th>
@@ -148,13 +157,14 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="connectivity">
+            <tr id="connectivity" className="connectivity">
               <th scope="row">
                 <RowHeader>
                   <input
                     type="checkbox"
                     name="connectivity"
                     value="Connectivity"
+                    onClick={() => handleClick("connectivity")}
                   />
                   <span style={{ marginLeft: "30px" }}>Connectivity</span>
                 </RowHeader>
@@ -167,10 +177,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="material">
+            <tr id="material" className="material">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="material" value="Material" />
+                  <input type="checkbox" name="material" value="Material" onClick={() => handleClick("material")}/>
                   <span style={{ marginLeft: "30px" }}>Material</span>
                 </RowHeader>
               </th>
@@ -182,10 +192,10 @@ const Comparison = ({ compareItems }) => {
             </tr>
           </tbody>
           <tbody>
-            <tr className="warranty">
+            <tr id="warranty" className="warranty">
               <th scope="row">
                 <RowHeader>
-                  <input type="checkbox" name="warranty" value="Warranty" />
+                  <input type="checkbox" name="warranty" value="Warranty" onClick={() => handleClick("warranty")}/>
                   <span style={{ marginLeft: "30px" }}>Warranty</span>
                 </RowHeader>
               </th>
