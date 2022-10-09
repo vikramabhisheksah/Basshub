@@ -20,6 +20,9 @@ const Compare = ({ compareItems }) => {
           <Comparison compareItems={compareItems} />
         </div>
       )}
+      {compareItems.length<2 &&(
+          <span>Add atleast two items to compare</span>
+      )}
     </Wrapper>
   );
 };

@@ -29,17 +29,25 @@ const Select = styled.select`
 `
 const Option = styled.option``
 
-const Products = ({searchQry,handleCompareClick}) => {
+const Products = ({searchQry,handleCompareClick, compareItems}) => {
 
     const [filters,setFilters]  =useState({})
     const [sort, setSort] = useState('newest')
     const handleFilters = (e) =>{
         const value = e.target.value;
-        setFilters({
-            ...filters,
-            [e.target.name]:value,
-        });
-        console.log(filters)
+        if (value.toLowerCase() === e.target.name.toLowerCase()){
+            setFilters(
+                {
+                    ...filters,
+                    [e.target.name]:'',
+                } 
+            );
+        }else{
+            setFilters({
+                ...filters,
+                [e.target.name]:value,
+            });
+        } 
     }
     const [filteredProducts, setFilteredProducts] = useState(products)
 
@@ -71,13 +79,13 @@ const Products = ({searchQry,handleCompareClick}) => {
             );
         }
     },[sort]);
-    
+
     return ( <>
         <FilterContainer>
             <Filter>
                 <FilterText>Filter Products:</FilterText>
                 <Select name='color' onChange={handleFilters} defaultValue='Color'>
-                    <Option disabled>
+                    <Option >
                         Color
                     </Option>
                     <Option>Gray</Option>
@@ -92,7 +100,7 @@ const Products = ({searchQry,handleCompareClick}) => {
                 </Select>
 
                 <Select name='rating' onChange={handleRating} defaultValue='Rating'>
-                    <Option disabled >
+                    <Option  >
                         Rating
                     </Option>
                     <Option>4+</Option>
@@ -102,7 +110,7 @@ const Products = ({searchQry,handleCompareClick}) => {
                 </Select>
 
                 <Select  name='design' onChange={handleFilters} defaultValue='Design'>
-                    <Option disabled >
+                    <Option  >
                         Design
                     </Option>
                     <Option>Over-Ear</Option>
@@ -110,14 +118,14 @@ const Products = ({searchQry,handleCompareClick}) => {
                     <Option>On-Ear</Option>
                 </Select>
                 <Select  name='connectivity' onChange={handleFilters} defaultValue='Connectivity'>
-                    <Option disabled >
+                    <Option  >
                         Connectivity
                     </Option>
                     <Option>Wired</Option>
                     <Option>Wireless</Option>
                 </Select>
-                <Select name='warranty' onChange={handleFilters} defaultValue='Warranty'>
-                    <Option disabled >
+                <Select name='warranty' onChange={handleFilters} defaultValue='Warranty' >
+                    <Option >
                         Warranty
                     </Option>
                     <Option>1 Year</Option>
@@ -132,16 +140,25 @@ const Products = ({searchQry,handleCompareClick}) => {
                     <Option value='newest'>
                         Newest
                     </Option>
-                    <Option value='asc'>Price(asc)</Option>
-                    <Option value='desc'>Price(desc)</Option>
+                    <Option value='asc'>Low To High (Price)</Option>
+                    <Option value='desc'>High To Low (Price)</Option>
             </Select>
             </Filter>
         </FilterContainer>
 
         <Container>
-            {filteredProducts.map((item)=>(
-                <Product item={item} key={item.id} handleCompareClick={handleCompareClick}/>
-            ))}
+            {filteredProducts.map((item)=>{
+                if (compareItems.includes(item)) {
+                    return(
+                        <Product item={item} key={item.id} handleCompareClick={handleCompareClick} selected={false}/>
+                    )
+                }else {
+                    return(
+                    <Product item={item} key={item.id} handleCompareClick={handleCompareClick} selected={true}/>
+                    )
+                }
+            }
+            )}
         </Container>
         </>
      );

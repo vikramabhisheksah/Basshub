@@ -77,19 +77,22 @@ const CompareIcon = styled.div`
   flex:1
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: white;
+  background-color: ${(props) => props.selected?'white':'#9C92A3'};
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px;
   transition: all 0.5s ease;
   font-size:10px;
+  padding: 5px;
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
   }
   cursor:pointer
+  border-style:solid;
+  border-width:2px;
+  border-color:black;
 `;
 const ProductInfo = styled.div`
   margin: 10px;
@@ -112,7 +115,7 @@ const ProductStats = styled.div`
   justify-content: space-between;
 `;
 
-const Product = ({ item, handleCompareClick }) => {
+const Product = ({ item, handleCompareClick , selected}) => {
   let navigate = useNavigate();
   
   return (
@@ -141,7 +144,7 @@ const Product = ({ item, handleCompareClick }) => {
             <RatingStar id={String(item.id)} rating={item.rating}  size={18}/>
           </ProductRating>
           <ProductPrice>$ {item.price}</ProductPrice>
-          <CompareIcon onClick={()=>handleCompareClick(item)} >
+          <CompareIcon onClick={()=>handleCompareClick(item)} selected={selected} >
             <CompareOutlined/><span>Compare</span>
           </CompareIcon>
         </ProductStats>

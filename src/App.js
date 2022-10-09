@@ -43,16 +43,23 @@ const App = () => {
     const handleCompareClick =(item)=>{
         if (!compareItems.includes(item) && compareItems.length <3) {
           setCompareItems(current => [...current, item]) 
+        
+        }
+        else if(compareItems.includes(item)){
+          setCompareItems(current => current.filter((e)=>e.id!==item.id))
+        }
+        else{
+          alert('Maximum 3 items can be compared togther')
         }
     }
-    console.log(compareItems)
+
   return (
     <>
       <GlobalStyle />
         <Navbar setSearchQry={setSearchQry} />
         <Offers />
         <Routes>
-          <Route path="/" element={<Home searchQry={searchQry} handleCompareClick={handleCompareClick}/>} />
+          <Route path="/" element={<Home searchQry={searchQry} handleCompareClick={handleCompareClick} compareItems={compareItems} />}/>
           <Route path="/product/:id" element={<Product />} />
           <Route path="/compare" element={<Compare compareItems={compareItems}/>}/>
         </Routes>

@@ -5,13 +5,13 @@ import Products from "../Components/Products";
 //import Filters from "../Components/Filters";
 
 
-const Home = ({searchQry,handleCompareClick}) => {
+const Home = ({searchQry,handleCompareClick,compareItems}) => {
     
 
     return ( 
         <div>
             <Slider/>
-            <Products searchQry={searchQry} handleCompareClick={handleCompareClick}/>
+            <Products searchQry={searchQry} handleCompareClick={handleCompareClick} compareItems={compareItems}/>
         </div>
      );
 }
