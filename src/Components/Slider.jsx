@@ -75,14 +75,14 @@ const Slider = () => {
   const sliderItems = [
     {
       id: 0,
-      img: "/img/solo3-pdp-p02.png.large.2x.png",
+      img: "./img/solo3-pdp-p02.png.large.2x.png",
       title: "TOP PICKS CURATED ONLY FOR YOU",
       desc: "Dont Compromise on Music! Get Flat 30% off for New Arrivals",
       bg: "coral",
     },
     {
       id: 1,
-      img: "/img/solo3-pdp-p02.png.large.2x copy.png",
+      img: "./img/solo3-pdp-p02.png.large.2x copy.png",
       title: "MIDTERM SALES!",
       desc: "Dont Compromise on Music! Get Flat 30% off for New Arrivals",
       bg: "#FFC700",
@@ -105,7 +105,7 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
-              <Image src={item.img} />
+              <Image src={"./" + item.img} />
             </ImgContainer>
             <InfoContainer>
               <Title>{item.title}</Title>

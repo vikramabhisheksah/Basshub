@@ -60,6 +60,7 @@ const FeatureColor = styled.div`
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  border-color="black";
   background-color: ${(props) => props.color};
   margin: 0px 5px;
   display: flex;
@@ -105,7 +106,7 @@ const Product = () => {
     <Container>
       <Wrapper>
         <ImgContainer>
-          <Image src={"/img/" + product.id + ".jpg"} />
+          <Image src={"./img/" + product.id + ".jpg"} />
         </ImgContainer>
         <InfoContainer>
           <Title> {product.name}</Title>
@@ -121,8 +122,8 @@ const Product = () => {
           </IconContainer>
           <FeaturesContainer>
             <Feature>
-              <ColorTitle>Color</ColorTitle>
-              <FeatureColor color={product.color.toLowerCase()} />
+              <FeatureTitle>Color</FeatureTitle>
+              <FeatureValue>{product.color}</FeatureValue>
             </Feature>
             <Feature>
               <FeatureTitle>Brand</FeatureTitle>

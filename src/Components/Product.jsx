@@ -127,7 +127,7 @@ const Product = ({ item, handleCompareClick , selected}) => {
         }}
       >
         <Circle />
-        <Image src={"/img/" + item.id + ".jpg"} />
+        <Image src={"./img/" + item.id + ".jpg"} />
         <Info>
           <Icon>
             <ShoppingCartOutlined />
@@ -138,10 +138,10 @@ const Product = ({ item, handleCompareClick , selected}) => {
         </Info>
       </Container>
       <ProductInfo>
-        <ProductTitle>{item.name}</ProductTitle>
+        <ProductTitle onClick={() => {navigate(`/product/${item.id}`);}}>{item.name}</ProductTitle>
         <ProductStats>
           <ProductRating>
-            <RatingStar id={String(item.id)} rating={item.rating}  size={18}/>
+            <RatingStar id={String(item.id)} rating={item.rating} size={18}/>
           </ProductRating>
           <ProductPrice>$ {item.price}</ProductPrice>
           <CompareIcon onClick={()=>handleCompareClick(item)} selected={selected} >

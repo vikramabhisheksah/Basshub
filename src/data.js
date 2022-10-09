@@ -10,7 +10,7 @@ export const products =[
     "connectivity": "Wired",
     "description": "The Focal Clear will bring you 5% short of Utopia. Meaning the Focal Clear is about 95% of its bigger brother, the Focal Utopia. The Clear has some of the best detail, resolution and dynamics in its price range however if you are looking for a little more low-end we recommend looking elsewhere as the Clear does have a brighter sound signature. Headphones.com has partnered with Focal to secure exclusive rights to Focal's last manufacturing run of the Focal Clear. The Focal Clear is now discontinued and only available for $890 (SAVE $600!) from Headphones.com! As it is the last manufacturing run and a Final Sale item, the Focal Clear is final sale and cannot be returned. However, the Clear is fully covered under Focal's manufacturer warranty.",
     "warranty": "3 years",
-    "material": "1.6\" (40mm) Aluminum/Magnesium 'M'-shape dome",
+    "material": "(40mm) Al/Mg 'M'-dome",
     "color": "Gray"
   },
   {
