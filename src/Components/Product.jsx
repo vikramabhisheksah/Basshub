@@ -135,13 +135,15 @@ const Product = ({ item, handleCompareClick }) => {
         </Info>
       </Container>
       <ProductInfo>
-        <ProductTitle>{item.name}</ProductTitle>
+        <ProductTitle onClick={() => {navigate(`/product/${item.id}`);}}>{item.name}</ProductTitle>
         <ProductStats>
           <ProductRating>
-            <RatingStar id={String(item.id)} rating={item.rating}  size={18}/>
+            <RatingStar id={String(item.id)} rating={item.rating} size={18}/>
           </ProductRating>
           <ProductPrice>$ {item.price}</ProductPrice>
-          <CompareIcon onClick={()=>handleCompareClick(item)} >
+          <CompareIcon onClick={()=>{
+            handleCompareClick(item);
+          }}>
             <CompareOutlined/><span>Compare</span>
           </CompareIcon>
         </ProductStats>
