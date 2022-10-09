@@ -2,7 +2,7 @@
 Nihar Shailesh Joshi\
 Aditya Nair\
 Priyal Sharma\
-Vikram Sah\
+Vikram Sah
 
 # Getting Started with Create React App
 
