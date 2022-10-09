@@ -44,8 +44,8 @@ const Comparison = ({ compareItems }) => {
   const notify = () => alert("The comparison has been saved (Only for Demo purpose) ");
 
   const handleClick = (idOfTh) => {
-    if (document.getElementById(idOfTh).style.backgroundColor != '#E6E6FA') {
-      document.getElementById(idOfTh).style.backgroundColor = '#E6E6FA';
+    if (document.getElementById(idOfTh).style.backgroundColor != 'lavender') {
+      document.getElementById(idOfTh).style.backgroundColor = 'lavender';
     }else {
       document.getElementById(idOfTh).style.backgroundColor = 'white';
     };
