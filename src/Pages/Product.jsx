@@ -57,12 +57,13 @@ const ColorTitle = styled.span`
   font-weight: 600;
 `;
 const FeatureColor = styled.div`
+
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border-color="black";
+  border-color:"black";
   background-color: ${(props) => props.color};
-  margin: 0px 5px;
+  margin: 0px 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -122,8 +123,8 @@ const Product = () => {
           </IconContainer>
           <FeaturesContainer>
             <Feature>
-              <FeatureTitle>Color</FeatureTitle>
-              <FeatureValue>{product.color}</FeatureValue>
+              <ColorTitle >Color</ColorTitle>
+              <FeatureColor color={product.color}></FeatureColor>
             </Feature>
             <Feature>
               <FeatureTitle>Brand</FeatureTitle>
