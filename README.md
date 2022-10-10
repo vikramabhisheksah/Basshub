@@ -1,8 +1,3 @@
-# Collaborators
-### [Nihar Shailesh Joshi](https://github.com/niharjoshi)
-### [Aditya Nair](https://github.com/adityabnair)
-### [Priyal Sharma](https://github.com/priyalsharma)
-### [Vikram Sah](https://github.com/vikramabhisheksah)
 
 # Getting Started with Create React App
 
