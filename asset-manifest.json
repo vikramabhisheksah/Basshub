@@ -1,15 +1,15 @@
 {
-  "main.css": "/basshub/static/css/main.5de55568.chunk.css",
-  "main.js": "/basshub/static/js/main.ebc87414.chunk.js",
-  "main.js.map": "/basshub/static/js/main.ebc87414.chunk.js.map",
-  "static/css/1.ad0c6b60.chunk.css": "/basshub/static/css/1.ad0c6b60.chunk.css",
-  "static/js/1.e8eace79.chunk.js": "/basshub/static/js/1.e8eace79.chunk.js",
-  "static/js/1.e8eace79.chunk.js.map": "/basshub/static/js/1.e8eace79.chunk.js.map",
-  "runtime~main.js": "/basshub/static/js/runtime~main.898bec76.js",
-  "runtime~main.js.map": "/basshub/static/js/runtime~main.898bec76.js.map",
-  "static/css/main.5de55568.chunk.css.map": "/basshub/static/css/main.5de55568.chunk.css.map",
-  "static/css/1.ad0c6b60.chunk.css.map": "/basshub/static/css/1.ad0c6b60.chunk.css.map",
-  "index.html": "/basshub/index.html",
-  "precache-manifest.8b1733b3bbb7fb3cb98cc8ad653079d4.js": "/basshub/precache-manifest.8b1733b3bbb7fb3cb98cc8ad653079d4.js",
-  "service-worker.js": "/basshub/service-worker.js"
+  "main.css": "/Basshub/static/css/main.5de55568.chunk.css",
+  "main.js": "/Basshub/static/js/main.ebc87414.chunk.js",
+  "main.js.map": "/Basshub/static/js/main.ebc87414.chunk.js.map",
+  "static/css/1.ad0c6b60.chunk.css": "/Basshub/static/css/1.ad0c6b60.chunk.css",
+  "static/js/1.c9ee7b98.chunk.js": "/Basshub/static/js/1.c9ee7b98.chunk.js",
+  "static/js/1.c9ee7b98.chunk.js.map": "/Basshub/static/js/1.c9ee7b98.chunk.js.map",
+  "runtime~main.js": "/Basshub/static/js/runtime~main.12c47e2c.js",
+  "runtime~main.js.map": "/Basshub/static/js/runtime~main.12c47e2c.js.map",
+  "static/css/1.ad0c6b60.chunk.css.map": "/Basshub/static/css/1.ad0c6b60.chunk.css.map",
+  "static/css/main.5de55568.chunk.css.map": "/Basshub/static/css/main.5de55568.chunk.css.map",
+  "index.html": "/Basshub/index.html",
+  "precache-manifest.786960c9c749acd268fadb332f2d98a3.js": "/Basshub/precache-manifest.786960c9c749acd268fadb332f2d98a3.js",
+  "service-worker.js": "/Basshub/service-worker.js"
 }
