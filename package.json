@@ -1,7 +1,7 @@
 {
+  "homepage":"http://vikramabhisheksah.github.io/basshub",
   "name": "basshub",
   "version": "0.1.0",
-  "homepage": "https://niharjoshi.github.io/ComparativeShoppingFunctionalPrototype",
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
