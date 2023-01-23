@@ -1,5 +1,5 @@
 # Basshub
-https://github.com/vikramabhisheksah/Basshub
+https://vikramabhisheksah.github.io/Basshub/
 
 # Getting Started with Create React App
 
